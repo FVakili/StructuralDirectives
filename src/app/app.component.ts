@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  absent: Boolean = true;
+  names : string[] = ['foad', 'ali', 'mohammad', 'kian'];
+
+  score ="90"
+
+  makeDisappear() {
+    this.absent = !this.absent;
+  }
 }
+
+
